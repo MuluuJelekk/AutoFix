@@ -7,7 +7,7 @@ cd
 wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/MuluuJelekk/openvpn/master/openvpn-debian.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
-wget -O /etc/openvpn/1194.conf "https://raw.github.com/MuluuJelekk/AutoFix/master/80.conf"
+wget -O /etc/openvpn/80.conf "https://raw.github.com/MuluuJelekk/AutoFix/master/80.conf"
 service openvpn restart
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
